@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #333333;
+}
+
+.app {
+  width: 100%;
+  /* display: flex; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h1 {
+  margin: 20px auto;
+}
+
+.container {
+  width: 850px;
+  margin: auto;
+  padding: 20px;
+}
+
+form {
+  background-color: #444444;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+form > input {
+  width: 80%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+form > button {
+  width: 150px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #BB86FC;
+  color: #FFFFFF;
+  border: none;
+}
+
+ul {
+  background-color: #444444;
+  padding: 0px 20px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+ul > li {
+  padding-bottom: 10px;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+ul > li:first-child {
+  padding-top: 10px;
+}
+
+ul > li:last-child {
+  padding-bottom: 20px;
+}
+
+ul > li:not(:last-child):after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #555;
+  padding-top: 10px;
+}
+
+li > input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+li > .title {
+  display: inline-block;
+  width: 750px;
+}
+
+li > .delete {
+  color: #BB86FC;
+  height: fit-content;
+}
+
+li > .delete:after {
+  content: "\00d7";
+  font-size: 2rem;
+}
